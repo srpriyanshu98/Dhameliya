@@ -6,6 +6,16 @@
         <title>Document</title>
         <!------- link style css ------->
         <link rel="stylesheet" href="style.css" />
+        <!-- font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        />
+        <!-- Swiper -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
         <!------ script of tailwindcss ------>
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- Google Fonts - Roboto -->
@@ -17,20 +27,46 @@
     <body class="font-roboto">
         <!------- Header start ------->
         <header class="bg-blue-900 text-white p-4">
-            <div class="container mx-auto flex gap-5">
-                <div class="flex items-center">
-                    <span class="text-base font-bold">Emergency Line:</span>
-                    <a href="tel:+91991225257" class="ml-2 text-base"
-                        >+91 991225257</a
-                    >
+            <div class="container mx-auto flex justify-between">
+                <div class="flex gap-5">
+                    <div class="items-center">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="text-sm font-bold ms-1"
+                            >Emergency Line:</span
+                        >
+                        <a href="tel:+91991225257" class="ml-2 text-sm"
+                            >+91 991225257</a
+                        >
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-square-envelope"></i>
+                        <a
+                            href="http://www.diamethylglyzhexa.in"
+                            class="text-sm ms-1"
+                            >www.diamethylglyzhexa.in</a
+                        >
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-truck-medical"></i>
+                        <span class="text-sm ms-1"> 2C7 emergency service</span>
+                    </div>
                 </div>
-                <div>
-                    <a href="http://www.diamethylglyzhexa.in" class="text-base"
-                        >www.diamethylglyzhexa.in</a
+                <div class="flex gap-3">
+                    <div
+                        class="face text-red-500 rounded-full bg-white px-2 py-1 text-xs"
                     >
-                </div>
-                <div>
-                    <span class="text-base">2C7 emergency service</span>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div
+                        class="insta text-red-500 rounded-full bg-white px-2 py-1 text-xs"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div
+                        class="youtube text-red-500 rounded-full bg-white px-1 py-1 text-xs"
+                    >
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
                 </div>
             </div>
         </header>
@@ -38,13 +74,16 @@
         <nav class="bg-white text-black p-4">
             <div class="container mx-auto flex items-center">
                 <div class="flex items-center">
-                    <img src="assets/images/logo770.png" />
+                    <img
+                        src="assets/images/logo770.png"
+                        style="height: 110px"
+                    />
                     <span class="text-2xl font-bold"
                         >Dhameliya Kidney Hospital</span
                     >
                 </div>
                 <div
-                    class="flex space-x-4 ms-16 me-16 font-semibold text-blue-900"
+                    class="flex space-x-4 ms-16 me-16 font-semibold text-[#0e204d]"
                 >
                     <a href="#" class="hover:underline">Home</a>
                     <a href="#" class="hover:underline">About</a>
@@ -55,7 +94,10 @@
                     <a href="#" class="hover:underline">News</a>
                     <a href="#" class="hover:underline">Contact</a>
                 </div>
-                <img src="assets/images/logo-corner.png" />
+                <img
+                    src="assets/images/logo-corner.png"
+                    style="height: 100px"
+                />
             </div>
         </nav>
         <!-- Nav Bar end  -->
@@ -66,10 +108,12 @@
             <div class="container mx-auto">
                 <div class="bg-white shadow-lg overflow-hidden">
                     <!-- Video Container -->
-                    <div class="relative" style="padding-bottom: 56.25%">
+                    <div class="relative w-full" style="padding-bottom: 56.25%">
                         <video
                             class="absolute top-0 left-0 w-full h-full object-cover"
                             controls
+                            loop
+                            autoplay
                         >
                             <source
                                 src="assets/images/homevid78961.mp4"
@@ -129,7 +173,426 @@
                 </div>
             </div>
         </section>
+        <!-- about end  -->
+        <!-- service start -->
+        <section class="bg-gray-100 py-16 relative">
+            <div class="container mx-auto px-4 overflow-hidden">
+                <h2 class="text-3xl font-bold text-blue-900 text-center mb-8">
+                    Our Medical Services
+                </h2>
+                <!-- Swiper Slider -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div
+                            class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300 relative"
+                        >
+                            <img
+                                src="assets/images/pro1808.jpeg"
+                                alt=""
+                                srcset=""
+                                style="border-radius: 6px"
+                            />
+                            <div class="ps-6 pt-10 pb-14">
+                                <h3
+                                    class="text-xl font-bold text-blue-900 mb-4"
+                                >
+                                    Kidney Stone
+                                </h3>
+                                <a
+                                    href="#"
+                                    class="text-blue-900 hover:px-4 hover:py-2 hover:rounded-full text-black-500 font-semibold hover:bg-black hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div
+                                class="absolute bottom-0 left-1/2 w-0 h-1 bg-blue-900 transform -translate-x-1/2 transition-all duration-300"
+                            ></div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div
+                            class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300"
+                        >
+                            <img
+                                src="assets/images/pro2453.jpeg"
+                                alt=""
+                                srcset=""
+                                style="border-radius: 6px"
+                            />
+                            <div class="ps-6 pt-10 pb-14">
+                                <h3
+                                    class="text-xl font-bold text-blue-900 mb-4"
+                                >
+                                    Prostate
+                                </h3>
+                                <a
+                                    href="#"
+                                    class="text-blue-900 hover:px-4 hover:py-2 hover:rounded-full text-black-500 font-semibold hover:bg-black hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div
+                            class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300"
+                        >
+                            <img
+                                src="assets/images/pro3613.jpeg"
+                                alt=""
+                                srcset=""
+                                style="border-radius: 6px"
+                            />
+                            <div class="ps-6 pt-10 pb-14">
+                                <h3
+                                    class="text-xl font-bold text-blue-900 mb-4"
+                                >
+                                    Uro Oncology
+                                </h3>
+                                <a
+                                    href="#"
+                                    class="text-blue-900 hover:px-4 hover:py-2 hover:rounded-full text-black-500 font-semibold hover:bg-black hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div
+                            class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300"
+                        >
+                            <img
+                                src="assets/images/prod1279477702.jpeg"
+                                alt=""
+                                srcset=""
+                                style="border-radius: 6px"
+                            />
+                            <div class="ps-6 pt-10 pb-14">
+                                <h3
+                                    class="text-xl font-bold text-blue-900 mb-4"
+                                >
+                                    PCNL
+                                </h3>
+                                <a
+                                    href="#"
+                                    class="text-blue-900 hover:px-4 hover:py-2 hover:rounded-full text-black-500 font-semibold hover:bg-black hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Slide 5 -->
+                        <div
+                            class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300"
+                        >
+                            <img
+                                src="assets/images/pro5813.jpeg"
+                                alt=""
+                                srcset=""
+                                style="border-radius: 6px"
+                            />
+                            <div class="ps-6 pt-10 pb-14">
+                                <h3
+                                    class="text-xl font-bold text-blue-900 mb-4"
+                                >
+                                    Female Urology
+                                </h3>
+                                <a
+                                    href="#"
+                                    class="text-blue-900 hover:px-4 hover:py-2 hover:rounded-full text-black-500 font-semibold hover:bg-black hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Slide 6 -->
+                        <div
+                            class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300"
+                        >
+                            <img
+                                src="assets/images/pro4741.jpeg"
+                                alt=""
+                                srcset=""
+                                style="border-radius: 6px"
+                            />
+                            <div class="ps-6 pt-10 pb-14">
+                                <h3
+                                    class="text-xl font-bold text-blue-900 mb-4"
+                                >
+                                    Pediatric Urology
+                                </h3>
+                                <a
+                                    href="#"
+                                    class="text-blue-900 hover:px-4 hover:py-2 hover:rounded-full text-black-500 font-semibold hover:bg-black hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- slide 7 -->
+                        <div
+                            class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300"
+                        >
+                            <img
+                                src="assets/images/pro9259.jpeg"
+                                alt=""
+                                srcset=""
+                                style="border-radius: 6px"
+                            />
+                            <div class="ps-6 pt-10 pb-14">
+                                <h3
+                                    class="text-xl font-bold text-blue-900 mb-4"
+                                >
+                                    Cystoscopy & Ureteroscopy
+                                </h3>
+                                <a
+                                    href="#"
+                                    class="text-blue-900 hover:px-4 hover:py-2 hover:rounded-full text-black-500 font-semibold hover:bg-black hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slide 8 -->
+                        <div
+                            class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300"
+                        >
+                            <img
+                                src="assets/images/pro7796.jpeg"
+                                alt=""
+                                srcset=""
+                                style="border-radius: 6px"
+                            />
+                            <div class="ps-6 pt-10 pb-14">
+                                <h3
+                                    class="text-xl font-bold text-blue-900 mb-4"
+                                >
+                                    Andrology
+                                </h3>
+                                <a
+                                    href="#"
+                                    class="text-blue-900 hover:px-4 hover:py-2 hover:rounded-full text-black-500 font-semibold hover:bg-black hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slide 9 -->
+                        <div
+                            class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300"
+                        >
+                            <img
+                                src="assets/images/pro6405.jpeg"
+                                alt=""
+                                srcset=""
+                                style="border-radius: 6px"
+                            />
+                            <div class="ps-6 pt-10 pb-14">
+                                <h3
+                                    class="text-xl font-bold text-blue-900 mb-4"
+                                >
+                                    Reconstructive Urology
+                                </h3>
+                                <a
+                                    href="#"
+                                    class="text-blue-900 hover:px-4 hover:py-2 hover:rounded-full text-black-500 font-semibold hover:bg-black hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slide 10 -->
+                        <div
+                            class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300"
+                        >
+                            <img
+                                src="assets/images/pro8728.jpeg"
+                                alt=""
+                                srcset=""
+                                style="border-radius: 6px"
+                            />
+                            <div class="ps-6 pt-10 pb-14">
+                                <h3
+                                    class="text-xl font-bold text-blue-900 mb-4"
+                                >
+                                    Laproscopic Urology
+                                </h3>
+                                <a
+                                    href="#"
+                                    class="text-blue-900 hover:px-4 hover:py-2 hover:rounded-full text-black-500 font-semibold hover:bg-black hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="swiper-pagination absolute bottom-0 left-0 right-0"
+                    ></div>
+                    <!-- Add Pagination -->
+                </div>
+            </div>
+        </section>
+        <!-- service end  -->
+
+        <!-- contact start -->
+
+        <section class="bg-blue-900 py-16 w-11/12 mx-auto rounded-lg">
+            <div class="container mx-auto px-4">
+                <!-- Combined Card -->
+                <div class="rounded-lg p-8 flex flex-col md:flex-row">
+                    <!-- Dialysis Patient's Life Section -->
+                    <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0 p-12">
+                        <h2
+                            class="text-[37px] font-bold text-white text-center mb-6"
+                        >
+                            A Dialysis Patient’s Life Is <br />Hard. Laugh
+                            Harder.
+                        </h2>
+                        <p class="text-white leading-relaxed text-center mb-20">
+                            Today the hospital is recognized as a world-renowned
+                            institution, not only providing outstanding care and
+                            treatment, our goal is to deliver quality care in a
+                            respectful & compassionate manner. We strive to be
+                            the first and best choice for healthcare.
+                        </p>
+                        <div class="flex gap-10 mt-12 mb-6">
+                            <div class="ps-12">
+                                <h3 class="text-xl font-bold text-white mb-2">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    ESWL – Lithotripsy
+                                </h3>
+                                <h3 class="text-xl font-bold text-white mb-2">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    Cytology
+                                </h3>
+                                <h3 class="text-xl font-bold text-white mb-2">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    HOLIP
+                                </h3>
+                            </div>
+                            <div class="ms-6">
+                                <h3 class="text-xl font-bold text-white mb-2">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    Endoscopic surgery
+                                </h3>
+                                <h3 class="text-xl font-bold text-white mb-2">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    Open surgery
+                                </h3>
+                                <h3 class="text-xl font-bold text-white mb-2">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    RIFS
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Section -->
+                    <div class="md:w-1/2 bg-white px-10 py-20 rounded-lg">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">
+                            How Can We Help?
+                        </h2>
+                        <p class="text-gray-500 leading-relaxed mb-6">
+                            Please feel welcome to contact our friendly
+                            reception staff with any general or medical enquiry.
+                            Our doctors will receive or return any urgent calls.
+                        </p>
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <input
+                                    type="text"
+                                    placeholder="Name"
+                                    class="w-full p-3 border border-gray-300 rounded-full"
+                                />
+                                <input
+                                    type="email"
+                                    placeholder="Email"
+                                    class="w-full p-3 border border-gray-300 rounded-full"
+                                />
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <input
+                                    type="tel"
+                                    placeholder="Phone"
+                                    class="w-full p-3 border border-gray-300 rounded-full"
+                                />
+                                <input
+                                    type="text"
+                                    placeholder="Subject"
+                                    class="w-full p-3 border border-gray-300 rounded-full"
+                                />
+                            </div>
+                            <div>
+                                <textarea
+                                    rows="4"
+                                    placeholder="Message"
+                                    class="w-full p-3 border border-gray-300 rounded-lg"
+                                ></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button
+                                    type="submit"
+                                    class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all duration-300"
+                                >
+                                    Submit Request *
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact end  -->
     </body>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return (
+                        '<span class="' + className + ' bg-blue-500"></span>'
+                    );
+                },
+            },
+            autoplay: {
+                delay: 3000, // Auto-swipe every 3 seconds
+                disableOnInteraction: false, // Continue autoplay even after user interaction
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
 
     <script>
         tailwind.config = {
