@@ -452,8 +452,20 @@
 
         <!-- contact start -->
 
-        <section class="bg-blue-900 py-16 w-11/12 mx-auto rounded-lg">
-            <div class="container mx-auto px-4">
+        <section
+            class="py-16 w-11/12 mx-auto rounded-lg relative"
+            style="
+                background-image: url(assets/images/3.jpg);
+                background-size: cover;
+                background-position: center;
+            "
+        >
+            <!-- Transparent Blue Overlay -->
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-[#243e93e6] to-[#263B72] opacity-90 rounded-lg"
+            ></div>
+
+            <div class="container mx-auto px-4 relative z-10">
                 <!-- Combined Card -->
                 <div class="rounded-lg p-8 flex flex-col md:flex-row">
                     <!-- Dialysis Patient's Life Section -->
@@ -514,43 +526,83 @@
                             Our doctors will receive or return any urgent calls.
                         </p>
                         <form class="space-y-4">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <input
-                                    type="text"
-                                    placeholder="Name"
-                                    class="w-full p-3 border border-gray-300 rounded-full"
-                                />
-                                <input
-                                    type="email"
-                                    placeholder="Email"
-                                    class="w-full p-3 border border-gray-300 rounded-full"
-                                />
+                            <!-- Name Input with Icon -->
+                            <div class="flex">
+                                <div class="relative">
+                                    <input
+                                        type="text"
+                                        placeholder="Name"
+                                        class="w-full p-3 pl-10 border border-gray-300 rounded-full"
+                                    />
+                                    <i
+                                        class="fa-solid fa-user absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                                    ></i>
+                                </div>
+                                <!-- Email Input with Icon -->
+                                <div class="relative ms-16">
+                                    <input
+                                        type="email"
+                                        placeholder="Email"
+                                        class="w-full p-3 pl-10 border border-gray-300 rounded-full"
+                                    />
+                                    <i
+                                        class="fa-solid fa-envelope absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                                    ></i>
+                                </div>
                             </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <input
-                                    type="tel"
-                                    placeholder="Phone"
-                                    class="w-full p-3 border border-gray-300 rounded-full"
-                                />
-                                <input
-                                    type="text"
-                                    placeholder="Subject"
-                                    class="w-full p-3 border border-gray-300 rounded-full"
-                                />
+                            <!-- Phone Input with Icon -->
+                            <div class="flex">
+                                <div class="relative">
+                                    <input
+                                        type="tel"
+                                        placeholder="Phone"
+                                        class="w-full p-3 pl-10 border border-gray-300 rounded-full"
+                                    />
+                                    <i
+                                        class="fa-solid fa-phone absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                                    ></i>
+                                </div>
+                                <!-- Subject Input with Icon -->
+                                <div class="relative ms-16">
+                                    <input
+                                        type="text"
+                                        placeholder="Subject"
+                                        class="w-full p-3 pl-10 border border-gray-300 rounded-full"
+                                    />
+                                    <i
+                                        class="fa-solid fa-newspaper absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                                    ></i>
+                                </div>
                             </div>
-                            <div>
+                            <!-- Message Input with Icon -->
+                            <div class="relative">
                                 <textarea
                                     rows="4"
                                     placeholder="Message"
-                                    class="w-full p-3 border border-gray-300 rounded-lg"
+                                    class="w-full p-3 pl-10 border border-gray-300 rounded-lg"
                                 ></textarea>
+                                <i
+                                    class="fa-solid fa-circle-exclamation absolute left-3 top-6 transform -translate-y-1/2 text-gray-400"
+                                ></i>
                             </div>
+                            <!-- Submit Button -->
                             <div class="text-center">
                                 <button
                                     type="submit"
-                                    class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all duration-300"
+                                    class="relative overflow-hidden px-6 py-3 bg-blue-500 text-white w-full rounded-full transition-all duration-300 group"
                                 >
-                                    Submit Request *
+                                    <!-- Text -->
+                                    <span class="relative z-10">
+                                        Submit Request
+                                        <i
+                                            class="fa-solid fa-arrow-right ml-2"
+                                        ></i>
+                                    </span>
+
+                                    <!-- Hover Effect (Black Background) -->
+                                    <span
+                                        class="absolute top-0 left-0 w-full h-full bg-black transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                                    ></span>
                                 </button>
                             </div>
                         </form>
