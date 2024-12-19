@@ -24,10 +24,11 @@
             rel="stylesheet"
         />
     </head>
+
     <body class="font-roboto">
         <!------- Header start ------->
-        <header class="bg-blue-900 text-white p-4">
-            <div class="container mx-auto flex justify-between">
+        <header class="bg-blue-900 text-white p-4 px-16">
+            <div class="container-fluid flex justify-between">
                 <div class="flex gap-5">
                     <div class="items-center">
                         <i class="fa-solid fa-phone"></i>
@@ -51,7 +52,7 @@
                         <span class="text-sm ms-1"> 2C7 emergency service</span>
                     </div>
                 </div>
-                <div class="flex gap-3">
+                <div class="flex gap-3 justify-self-end">
                     <div
                         class="face text-red-500 rounded-full bg-white px-2 py-1 text-xs"
                     >
@@ -71,72 +72,160 @@
             </div>
         </header>
         <!-- Nav Bar start -->
-        <nav class="bg-white text-black p-4">
-            <div class="container mx-auto flex items-center">
-                <div class="flex items-center">
-                    <img
-                        src="assets/images/logo770.png"
-                        style="height: 110px"
-                    />
-                    <span class="text-2xl font-bold"
-                        >Dhameliya Kidney Hospital</span
-                    >
+        <nav class="px-12">
+            <div class="container flex items-center gap-x-16 p-2">
+                <div>
+                    <a href="#" class="flex items-center">
+                        <img
+                            src="assets/images/logo770.png"
+                            class="h-24 w-24 object-cover"
+                        />
+                        <span class="text-2xl font-bold text-[#0e204d]"
+                            >Dhameliya Kidney Hospital</span
+                        >
+                    </a>
                 </div>
-                <div
-                    class="flex space-x-4 ms-16 me-16 font-semibold text-[#0e204d]"
-                >
-                    <a
-                        href="#"
-                        class="max-lg:border-b max-lg:py-3 max-lg:px-3 relative lg:hover:after:absolute lg:after:bg-black lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[2px] lg:after:block lg:after:bottom-20 lg:after:transition-all lg:after:duration-300"
-                        >Home</a
-                    >
-                    <a
-                        href="#"
-                        class="max-lg:border-b max-lg:py-3 max-lg:px-3 relative lg:hover:after:absolute lg:after:bg-black lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[2px] lg:after:block lg:after:bottom-20 lg:after:transition-all lg:after:duration-300"
-                        >About</a
-                    >
-                    <a
-                        href="#"
-                        class="max-lg:border-b max-lg:py-3 max-lg:px-3 relative lg:hover:after:absolute lg:after:bg-black lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[2px] lg:after:block lg:after:bottom-20 lg:after:transition-all lg:after:duration-300"
-                        >Medical Services</a
-                    >
-                    <a
-                        href="#"
-                        class="max-lg:border-b max-lg:py-3 max-lg:px-3 relative lg:hover:after:absolute lg:after:bg-black lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[2px] lg:after:block lg:after:bottom-20 lg:after:transition-all lg:after:duration-300"
-                        >Testimonials</a
-                    >
-                    <a
-                        href="#"
-                        class="max-lg:border-b max-lg:py-3 max-lg:px-3 relative lg:hover:after:absolute lg:after:bg-black lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[2px] lg:after:block lg:after:bottom-20 lg:after:transition-all lg:after:duration-300"
-                        >Gallery</a
-                    >
-                    <a
-                        href="#"
-                        class="max-lg:border-b max-lg:py-3 max-lg:px-3 relative lg:hover:after:absolute lg:after:bg-black lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[2px] lg:after:block lg:after:bottom-20 lg:after:transition-all lg:after:duration-300"
-                        >Career</a
-                    >
-                    <a
-                        href="#"
-                        class="max-lg:border-b max-lg:py-3 max-lg:px-3 relative lg:hover:after:absolute lg:after:bg-black lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[2px] lg:after:block lg:after:bottom-20 lg:after:transition-all lg:after:duration-300"
-                        >News</a
-                    >
-                    <a
-                        href="#"
-                        class="max-lg:border-b max-lg:py-3 max-lg:px-3 relative lg:hover:after:absolute lg:after:bg-black lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[2px] lg:after:block lg:after:bottom-20 lg:after:transition-all lg:after:duration-300"
-                        >Contact</a
-                    >
+                <ul class="flex gap-x-8 text-[#0e204d] font-semibold text-sm">
+                    <li>
+                        <a
+                            href="#"
+                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-full"
+                        >
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="relative group">
+                        <a
+                            href="#"
+                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+                        >
+                            <span>About</span>
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </a>
+                        <div
+                            class="absolute top-full z-10 bg-white py-4 w-64 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
+                        >
+                            <ul>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="block py-2 px-10 text-sm"
+                                    >
+                                        Awards and Achivements
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="block py-2 px-10 text-sm"
+                                    >
+                                        Awards and Achivements
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="block py-2 px-10 text-sm"
+                                    >
+                                        Awards and Achivements
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <a
+                            href="#"
+                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+                        >
+                            <span>
+                                Medical Services
+                                <i class="fa-solid fa-chevron-down"></i
+                            ></span>
+                        </a>
+                        <div
+                            class="absolute top-full z-10 bg-white py-4 w-64 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
+                        >
+                            <ul>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="block py-2 px-10 text-sm"
+                                    >
+                                        Awards and Achivements
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="block py-2 px-10 text-sm"
+                                    >
+                                        Awards and Achivements
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="block py-2 px-10 text-sm"
+                                    >
+                                        Awards and Achivements
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <a
+                            href="#"
+                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+                        >
+                            <span>Testimonials</span>
+                        </a>
+                    </li>
+                    <li class="relative group">
+                        <a
+                            href="#"
+                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+                        >
+                            <span>Gallery</span>
+                        </a>
+                    </li>
+                    <li class="relative group">
+                        <a
+                            href="#"
+                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+                        >
+                            <span>Career</span>
+                        </a>
+                    </li>
+                    <li class="relative group">
+                        <a
+                            href="#"
+                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+                        >
+                            <span>News</span>
+                        </a>
+                    </li>
+                    <li class="relative group">
+                        <a
+                            href="#"
+                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+                        >
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="justify-self-end">
+                    <img src="assets/images/logo-corner.png" class="h-24" />
                 </div>
-                <img
-                    src="assets/images/logo-corner.png"
-                    style="height: 100px"
-                />
             </div>
         </nav>
+            
         <!-- Nav Bar end  -->
         <!------- Header end ------>
 
         <!-- Hero Section start -->
-        <section class="bg-gray-100 mt-0">
+        <section class="bg-white-100 mt-0">
             <div class="container mx-auto">
                 <div class="bg-white shadow-lg overflow-hidden">
                     <!-- Video Container -->
@@ -158,7 +247,7 @@
         </section>
         <!-- hero end  -->
         <!---- About start ---->
-        <section class="bg-gray-100 py-16">
+        <section class="bg-white-100 py-16">
             <div class="container mx-auto px-4">
                 <div class="p-8 flex flex-col md:flex-row items-center">
                     <!-- Text Content -->
@@ -207,14 +296,14 @@
         </section>
         <!-- about end  -->
         <!-- service start -->
-        <section class="bg-gray-100 py-16 relative">
+        <section class="bg-white-100 py-16 relative">
             <div class="container mx-auto px-4 overflow-hidden">
                 <h2 class="text-3xl font-bold text-blue-900 text-center mb-8">
                     Our Medical Services
                 </h2>
                 <!-- Swiper Slider -->
                 <div class="swiper-container">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper pb-6">
                         <!-- Slide 1 -->
                         <div
                             class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300 relative"
@@ -474,7 +563,7 @@
                     </div>
 
                     <div
-                        class="swiper-pagination absolute bottom-0 left-0 right-0"
+                        class="swiper-pagination absolute bottom-0 left-0 right-0 pb-14"
                     ></div>
                     <!-- Add Pagination -->
                 </div>
@@ -548,10 +637,11 @@
                     </div>
 
                     <!-- Contact Form Section -->
-                    <div class="md:w-1/2 bg-white px-10 py-20 rounded-lg">
+                    <div class="md:w-1/2 bg-white px-20 py-20 rounded-lg">
                         <h2 class="text-3xl font-bold text-gray-800 mb-6">
                             How Can We Help?
                         </h2>
+
                         <p class="text-gray-500 leading-relaxed mb-6">
                             Please feel welcome to contact our friendly
                             reception staff with any general or medical enquiry.
@@ -621,7 +711,7 @@
                             <div class="text-center">
                                 <button
                                     type="submit"
-                                    class="relative overflow-hidden px-6 py-3 bg-blue-500 text-white w-full rounded-full transition-all duration-300 group"
+                                    class="relative overflow-hidden px-6 py-3 bg-[#2e3192] text-white w-full py-4 rounded-full transition-all duration-300 group"
                                 >
                                     <!-- Text -->
                                     <span class="relative z-10">
@@ -631,7 +721,7 @@
                                         ></i>
                                     </span>
 
-                                    <!-- Hover Effect (Black Background) -->
+                                    <!-- Hover Effect-->
                                     <span
                                         class="absolute top-0 left-0 w-full h-full bg-black transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
                                     ></span>
@@ -643,28 +733,406 @@
             </div>
         </section>
         <!-- contact end  -->
+
         <!-- True Healthcare Section -->
-        <section class="bg-gray-100 py-16">
+        <section class="bg-white-100 py-16">
             <div class="mx-auto">
-                <div class="p-8 text-center" style="background-color: #3851a2">
-                    <h2 class="text-3xl font-bold text-white mb-6">
-                        True Healthcare For Your Family!
-                    </h2>
-                    <p class="text-white leading-relaxed mb-6">
-                        Save the community by improving the quality of life
-                        through better health. We have not pressure to protect
-                        our patients and staff while continuing to provide
-                        medically.
-                    </p>
-                    <a
-                        href="#"
-                        class="inline-block px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-all duration-300"
+                <div class="p-8" style="background-color: #3851a2">
+                    <div
+                        class="container flex mx-auto items-center justify-center mt-14"
                     >
-                        Contact Us
-                    </a>
+                        <div class="m-8">
+                            <img
+                                src="assets/images/alert2.png"
+                                alt=""
+                                srcset=""
+                            />
+                        </div>
+                        <div class="m-8">
+                            <h2 class="text-3xl font-semibold text-white">
+                                True Healthcare For Your Family!
+                            </h2>
+                            <p class="text-white leading-relaxed mb-6 mt-6">
+                                Serve the community by improving the quality of
+                                life through better health. We have <br />put
+                                protocols to protect our patients and staff
+                                while continuing to provide medically <br />
+                                necessary care.
+                            </p>
+                        </div>
+                        <div class="text-center m-8">
+                            <button
+                                type="submit"
+                                class="relative overflow-hidden px-6 py-3 bg-black text-white w-full rounded-full transition-all duration-300 group"
+                            >
+                                <!-- Text -->
+                                <span class="relative z-10">
+                                    Contact Us
+                                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                                </span>
+
+                                <!-- Hover Effect-->
+                                <span
+                                    class="absolute top-0 left-0 w-full h-full bg-blue-500 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                                ></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- News feed section start -->
+        <section class="bg-white-100 pb-8">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">Latest News</h2>
+                <div class="flex justify-center items-start gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white rounded-lg hover:shadow-md w-full md:w-1/4 overflow-hidden group"
+                    >
+                        <div>
+                            <!-- Image with Hover Effect -->
+                            <div class="relative">
+                                <img
+                                    src="assets/images/blog1401.jpeg"
+                                    alt="post image"
+                                    class="w-full h-auto transition-transform duration-300 transform group-hover:scale-105"
+                                />
+                            </div>
+
+                            <div class="p-6">
+                                <!-- Date Badge -->
+                                <span
+                                    class="text-white p-1 rounded-tr-lg rounded-br-lg rounded-bl-lg text-sm mb-2 bg-red-500"
+                                >
+                                    Credit: 21, 2022
+                                </span>
+
+                                <!-- Title -->
+                                <h3
+                                    class="text-xl font-bold text-gray-800 mb-4"
+                                >
+                                    What To Do When You Break A Bone?
+                                </h3>
+
+                                <!-- Description -->
+                                <p class="text-gray-400 mb-4 font-normal">
+                                    Deciding a bone is a serious and scary
+                                    situation that can happen to anyone in a
+                                    number of different ways. The most common
+                                    way a be...
+                                </p>
+
+                                <!-- Button with Hover Effect -->
+                                <a
+                                    href="#"
+                                    class="inline-block text-blue-900 group-hover:px-4 py-2 group-hover:rounded-full group-hover:bg-black group-hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white rounded-lg hover:shadow-md w-full md:w-1/4 overflow-hidden group"
+                    >
+                        <div>
+                            <!-- Image with Hover Effect -->
+                            <div class="relative">
+                                <img
+                                    src="assets/images/Untitled design642.jpeg"
+                                    alt="post image"
+                                    loading="lazy"
+                                    class="w-full h-auto transition-transform duration-300 transform group-hover:scale-105"
+                                />
+                            </div>
+
+                            <div class="p-6">
+                                <!-- Date Badge -->
+                                <span
+                                    class="text-white p-1 rounded-tr-lg rounded-br-lg rounded-bl-lg text-sm mb-2 bg-red-500"
+                                >
+                                    Overview: 13, 2022
+                                </span>
+
+                                <!-- Title -->
+                                <h3
+                                    class="text-xl font-bold text-gray-800 mb-4"
+                                >
+                                    The Importance Of Recognizing Kidney Stones:
+                                    Prevention A...
+                                </h3>
+
+                                <!-- Description -->
+                                <p class="text-gray-400 mb-4 font-normal">
+                                    Kidney stones are a prevalent yet painful
+                                    condition that can significantly impact
+                                    daily life. These hard mineral deposits form
+                                    in...
+                                </p>
+
+                                <!-- Button with Hover Effect -->
+                                <a
+                                    href="#"
+                                    class="inline-block text-blue-900 group-hover:px-4 py-2 group-hover:rounded-full group-hover:bg-black group-hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white rounded-lg hover:shadow-md w-full md:w-1/4 overflow-hidden group"
+                    >
+                        <div>
+                            <!-- Image with Hover Effect -->
+                            <div class="relative">
+                                <img
+                                    src="path-to-image.jpg"
+                                    alt="post image"
+                                    loading="lazy"
+                                    class="w-full h-auto transition-transform duration-300 transform group-hover:scale-105"
+                                />
+                            </div>
+
+                            <div class="p-6">
+                                <!-- Date Badge -->
+                                <span
+                                    class="text-white p-1 rounded-tr-lg rounded-br-lg rounded-bl-lg text-sm mb-2 bg-red-500"
+                                >
+                                    Overview: 14, 2022
+                                </span>
+
+                                <!-- Title -->
+                                <h3
+                                    class="text-xl font-bold text-gray-800 mb-4"
+                                >
+                                    Robotic Surgery: Revolutionizing Patient
+                                    Care ...
+                                </h3>
+
+                                <!-- Description -->
+                                <p class="text-gray-400 mb-4 font-normal">
+                                    In the ever-evolving field of healthcare,
+                                    technological advancements have paved the
+                                    way for groundbreaking procedures..
+                                </p>
+
+                                <!-- Button with Hover Effect -->
+                                <a
+                                    href="#"
+                                    class="inline-block text-blue-900 group-hover:px-4 py-2 group-hover:rounded-full group-hover:bg-black group-hover:text-white transition-all duration-300"
+                                >
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News feed section end -->
+        <!-- footer start -->
+
+        <footer class="bg-blue-900 text-white py-10">
+            <div class="container mx-auto px-4">
+                <div
+                    class="flex flex-wrap justify-center justify-evenly items-center"
+                >
+                    <!-- Section 1-->
+                    <div class="w-full md:w-1/3 lg:w-1/4 mb-6">
+                        <h2 class="text-[32px] font-bold mb-4">
+                            Dhameliya <br />Kidney Hospital
+                        </h2>
+                        <p
+                            class="text-gray-400 text-sm leading-relaxed hover:text-white"
+                        >
+                            Dhameliya Kidney Hospital has been one of <br />
+                            the most trusted centers catering to patients with
+                            complicated kidney diseases in Brazil. It is a blend
+                            of high-risk technology and world-class experts.
+                        </p>
+                        <a href="#" class="inline-block text-white pt-6">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Section 2-->
+                    <div class="w-full md:w-1/3 lg:w-1/4 mb-6 flex gap-16">
+                        <div>
+                            <h3 class="text-base font-semibold mb-4">
+                                Medical Services
+                            </h3>
+                            <ul class="space-y-2 text-sm">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-gray-400 hover:text-white transition"
+                                        >Kidney Stone</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-gray-400 hover:text-white transition"
+                                        >Prostate</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-gray-400 hover:text-white transition"
+                                        >Uro Oncology</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-gray-400 hover:text-white transition"
+                                        >Pediatric Urology</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-gray-400 hover:text-white transition"
+                                        >Female Urology</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-semibold mb-4">Links</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-gray-400 hover:text-white transition"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-gray-400 hover:text-white transition"
+                                        >About Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-gray-400 hover:text-white transition"
+                                        >Medical Services</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-gray-400 hover:text-white transition"
+                                        >Testimonials</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-gray-400 hover:text-white transition"
+                                        >Contact Us</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Section 3-->
+                    <div
+                        class="w-full md:w-1/3 lg:w-1/4 bg-white rounded-lg shadow-lg p-10 mb-6 mt-10 relative"
+                    >
+                        <!-- Contact Information Section -->
+                        <div
+                            class="absolute left-0 h-[18 rem] w-1 bg-blue-900"
+                            style="top: 45px; bottom: 5px; left: -0px"
+                        ></div>
+                        <div class="mb-6">
+                            <h3 class="text-lg text-black font-bold mb-8">
+                                Contact Us
+                            </h3>
+                            <p class="text-gray-500 font-normal text-sm mb-2">
+                                If you have any questions or need help, feel
+                                <br />
+                                free to contact our team.
+                            </p>
+                            <p
+                                class="text-red-500 mb-4 mt-4 text-[22px] font-semibold"
+                            >
+                                <i class="fa-solid fa-phone"></i>
+                                <a
+                                    href="tel:+912612490001"
+                                    class="text-red-500 hover:underline"
+                                    >+912612490001</a
+                                >
+                            </p>
+                            <p class="text-gray-500 font-normal text-sm mb-4">
+                                402, Aayush Doctor House, Lal Darwaja,
+                                <br />Station Road, SURAT 395 002 - GUJ INDIA
+                            </p>
+                            <div class="mb-2 flex gap-10">
+                                <div class="text-[15px]">
+                                    <i
+                                        class="fa-solid fa-arrow-right text-black text-[14px]"
+                                    ></i>
+                                    <a
+                                        href="#"
+                                        class="text-black hover:underline"
+                                        >Get Directions</a
+                                    >
+                                </div>
+                                <div>
+                                    <div class="flex gap-3">
+                                        <div
+                                            class="face text-white hover:bg-[#2e3192] rounded-full bg-red-500 px-2 py-1 text-xs"
+                                        >
+                                            <i
+                                                class="fa-brands fa-facebook-f"
+                                            ></i>
+                                        </div>
+                                        <div
+                                            class="insta text-white hover:bg-[#2e3192] rounded-full bg-red-500 px-2 py-1 text-xs"
+                                        >
+                                            <i
+                                                class="fa-brands fa-instagram"
+                                            ></i>
+                                        </div>
+                                        <div
+                                            class="youtube text-white hover:bg-[#2e3192] rounded-full bg-red-500 px-1 py-1 text-xs"
+                                        >
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-[15px]">
+                                <i
+                                    class="fa-solid fa-arrow-right text-black text-[14px]"
+                                ></i>
+                                <a href="#" class="text-black hover:underline"
+                                    >Other Branch</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer end -->
     </body>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -683,8 +1151,8 @@
                 },
             },
             autoplay: {
-                delay: 3000, // Auto-swipe every 3 seconds
-                disableOnInteraction: false, // Continue autoplay even after user interaction
+                delay: 3000,
+                disableOnInteraction: true,
             },
             breakpoints: {
                 640: {
