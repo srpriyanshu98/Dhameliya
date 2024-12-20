@@ -85,13 +85,15 @@
                         >
                     </a>
                 </div>
-                <ul class="flex gap-x-8 text-[#0e204d] font-semibold text-sm">
+                <ul class="flex gap-x-8">
                     <li>
                         <a
                             href="#"
                             class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-full"
                         >
-                            <span>Home</span>
+                            <span class="text-[#0e204d] font-semibold text-sm"
+                                >Home</span
+                            >
                         </a>
                     </li>
                     <li class="relative group">
@@ -99,7 +101,9 @@
                             href="#"
                             class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
                         >
-                            <span>About</span>
+                            <span class="text-[#0e204d] font-semibold text-sm"
+                                >About</span
+                            >
                             <i class="fa-solid fa-chevron-down text-xs"></i>
                         </a>
                         <div
@@ -138,27 +142,29 @@
                             href="#"
                             class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
                         >
-                            <span>
+                            <span class="text-[#0e204d] font-semibold text-sm">
                                 Medical Services
                                 <i class="fa-solid fa-chevron-down"></i
                             ></span>
                         </a>
                         <div
-                            class="absolute top-full z-10 bg-white py-4 w-64 shadow-xl transition-all duration-300"
+                            class="absolute top-full z-10 bg-white py-4 w-64 shadow-xl transition-all duration-300 invisible group-hover:visible opacity-0 group-hover:opacity-100"
                         >
                             <!-- invisible group-hover:visible opacity-0 group-hover:opacity-100-->
                             <ul>
-                                <li>
+                                <li class="relative group">
                                     <a
                                         href="#"
-                                        class="block py-2 px-10 text-sm"
+                                        class="py-2 px-10 text-sm cursor-pointer"
+                                        id="kidney-stone-link"
                                     >
                                         Kidney Stone
                                     </a>
                                     <div
-                                        class="absolute leading-8 top-5 left-[-120px] bg-white py-4 ps-5 pe-20"
+                                        class="absolute top-0 left-[-120px] bg-white py-4 ps-5 pe-20 hidden"
+                                        id="kidney-stone-submenu"
                                     >
-                                        <ul>
+                                        <ul class="text-sm leading-6">
                                             <li>
                                                 <a href="">
                                                     <span> PCNL </span>
@@ -259,10 +265,12 @@
                     </li>
                     <li class="relative group">
                         <a
-                            href="#"
+                            href="./Testimonials.html"
                             class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
                         >
-                            <span>Testimonials</span>
+                            <span class="text-[#0e204d] font-semibold text-sm"
+                                >Testimonials</span
+                            >
                         </a>
                     </li>
                     <li class="relative group">
@@ -270,7 +278,19 @@
                             href="#"
                             class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
                         >
-                            <span>Gallery</span>
+                            <span class="text-[#0e204d] font-semibold text-sm"
+                                >Gallery</span
+                            >
+                        </a>
+                    </li>
+                    <li class="relative group">
+                        <a
+                            href="./Career.html"
+                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+                        >
+                            <span class="text-[#0e204d] font-semibold text-sm"
+                                >Career</span
+                            >
                         </a>
                     </li>
                     <li class="relative group">
@@ -278,7 +298,9 @@
                             href="#"
                             class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
                         >
-                            <span>Career</span>
+                            <span class="text-[#0e204d] font-semibold text-sm"
+                                >News</span
+                            >
                         </a>
                     </li>
                     <li class="relative group">
@@ -286,15 +308,9 @@
                             href="#"
                             class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
                         >
-                            <span>News</span>
-                        </a>
-                    </li>
-                    <li class="relative group">
-                        <a
-                            href="#"
-                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
-                        >
-                            <span>Contact</span>
+                            <span class="text-[#0e204d] font-semibold text-sm"
+                                >Contact</span
+                            >
                         </a>
                     </li>
                 </ul>
@@ -1214,6 +1230,24 @@
                 </div>
             </div>
         </footer>
+        <Subfooter class="bg-gray-800 text-white py-4 mt-6">
+            <div class="container mx-auto px-4 text-center">
+                <div class="flex p-4">
+                    <p class="text-sm text-gray-700">
+                        © Copyright Dhamelha Nolney Hospital @ 2022
+                    </p>
+                    <p class="text-sm text-gray-700">
+                        Design & Development
+                        <span class="text-sm text-black">
+                            By Iked Inkotich</span
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="container-fluid mx-14 mb-8">
+                <div class="w-full border-2 border-black"></div>
+            </div>
+        </Subfooter>
 
         <!-- footer end -->
     </body>
@@ -1255,14 +1289,27 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: "#da373d", // Example color customization
+                        clifford: "#da373d",
                     },
                     fontFamily: {
-                        roboto: ["Roboto", "sans-serif"], // Include the Roboto font
+                        roboto: ["Roboto", "sans-serif"],
                     },
                     primary: "#064681",
                 },
             },
         };
+    </script>
+    <script>
+        document
+            .getElementById("kidney-stone-link")
+            .addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+                const submenu = document.getElementById("kidney-stone-submenu");
+                if (submenu.classList.contains("hidden")) {
+                    submenu.classList.remove("hidden"); // Show the submenu
+                } else {
+                    submenu.classList.add("hidden"); // Hide the submenu
+                }
+            });
     </script>
 </html>
