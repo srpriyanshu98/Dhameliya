@@ -1,2 +1,23 @@
+.member {
+    position: relative;
+}
 
+.member::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background-color: #131d18;
+    transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+    -webkit-transition: -webkit-transform 0.4s linear;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transition-delay: 0.3s;
+}
 
+.member:hover::before {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+}
