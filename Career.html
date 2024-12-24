@@ -88,7 +88,7 @@
                 <ul class="flex gap-x-8">
                     <li>
                         <a
-                            href="./index.html"
+                            href="#"
                             class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-full"
                         >
                             <span class="text-[#0e204d] font-semibold text-sm"
@@ -98,7 +98,7 @@
                     </li>
                     <li class="relative group">
                         <a
-                            href="#"
+                            href="./About.html"
                             class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
                         >
                             <span class="text-[#0e204d] font-semibold text-sm"
@@ -112,7 +112,7 @@
                             <ul>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="./Awards.html"
                                         class="block py-2 px-10 text-sm"
                                     >
                                         Awards and Achivements
@@ -120,7 +120,7 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="./Cashless.html"
                                         class="block py-2 px-10 text-sm"
                                     >
                                         Cashless Facility
@@ -128,7 +128,7 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="./Equipment.html"
                                         class="block py-2 px-10 text-sm"
                                     >
                                         Equipments
@@ -139,7 +139,7 @@
                     </li>
                     <li class="relative group">
                         <a
-                            href="#"
+                            href="./Medical.html"
                             class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
                         >
                             <span class="text-[#0e204d] font-semibold text-sm">
@@ -152,19 +152,18 @@
                         >
                             <!-- invisible group-hover:visible opacity-0 group-hover:opacity-100-->
                             <ul>
-                                <li class="relative group">
+                                <li class="relative group" id="kidney-submenu">
                                     <a
-                                        href="#"
-                                        class="py-2 px-10 text-sm cursor-pointer"
-                                        id="kidney-stone-link"
+                                        href="./Kideny.html"
+                                        class="block py-2 px-10 text-sm cursor-pointer"
                                     >
                                         Kidney Stone
                                     </a>
                                     <div
                                         class="absolute top-0 left-[-120px] bg-white py-4 ps-5 pe-20 hidden"
-                                        id="kidney-stone-submenu"
+                                        id="kidney-submenu-content"
                                     >
-                                        <ul class="text-sm leading-6">
+                                        <ul class="text-sm leading-8">
                                             <li>
                                                 <a href="">
                                                     <span> PCNL </span>
@@ -188,17 +187,37 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li>
+                                <li
+                                    class="relative group"
+                                    id="prostate-submenu"
+                                >
                                     <a
-                                        href="#"
-                                        class="block py-2 px-10 text-sm"
+                                        href="./Prostate.html"
+                                        class="block py-2 px-10 text-sm cursor-pointer"
                                     >
                                         Prostate
                                     </a>
+                                    <div
+                                        class="absolute top-0 left-[-120px] bg-white py-4 ps-5 pe-20 hidden"
+                                        id="prostate-submenu-content"
+                                    >
+                                        <ul class="text-sm leading-8">
+                                            <li>
+                                                <a href="">
+                                                    <span> TRUP </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span> HOLEP </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="./Uro.html"
                                         class="block py-2 px-10 text-sm"
                                     >
                                         Uro Oncology
@@ -206,55 +225,146 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
-                                        class="block py-2 px-10 text-sm"
-                                    >
-                                        Awards and Achivements
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
+                                        href="./Pediatric.html"
                                         class="block py-2 px-10 text-sm"
                                     >
                                         Pediatric Urology
                                     </a>
                                 </li>
-                                <li>
+                                <li class="relative group" id="female-submenu">
                                     <a
-                                        href="#"
+                                        href="./Female.html"
                                         class="block py-2 px-10 text-sm"
                                     >
                                         Female Urology
                                     </a>
+                                    <div
+                                        class="absolute top-0 left-[-220px] bg-white py-4 ps-5 pe-20 hidden"
+                                        id="female-submenu-content"
+                                    >
+                                        <ul class="text-sm leading-8">
+                                            <li>
+                                                <a href="">
+                                                    <span>
+                                                        Vesico Vaginal Fistula
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>
+                                                        Cystocele & Rectocele
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>
+                                                        Urinary Incontinence
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li>
+                                <li
+                                    class="relative group"
+                                    id="reconstructive-submenu"
+                                >
                                     <a
-                                        href="#"
+                                        href="./Reconstructive.html"
                                         class="block py-2 px-10 text-sm"
                                     >
                                         Reconstructive Urology
                                     </a>
+                                    <div
+                                        class="absolute top-0 left-[-230px] bg-white py-4 ps-5 pe-20 hidden"
+                                        id="reconstructive-submenu-content"
+                                    >
+                                        <ul class="text-sm leading-8">
+                                            <li>
+                                                <a href="">
+                                                    <span> Urethroplasty </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span> Pyeloplasty </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span>
+                                                        Ureteric Reimplantation
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li>
+
+                                <!-- Andrology -->
+                                <li
+                                    class="relative group"
+                                    id="andrology-submenu"
+                                >
                                     <a
-                                        href="#"
+                                        href="./Andrology.html"
                                         class="block py-2 px-10 text-sm"
                                     >
                                         Andrology
                                     </a>
+                                    <div
+                                        class="absolute top-0 left-[-130px] bg-white py-4 ps-5 pe-20 hidden"
+                                        id="andrology-submenu-content"
+                                    >
+                                        <ul class="text-sm leading-8">
+                                            <li>
+                                                <a href="">
+                                                    <span> Infertility </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span> Impotence </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li>
+
+                                <!-- Laproscopic Urology -->
+                                <li
+                                    class="relative group"
+                                    id="laproscopic-submenu"
+                                >
                                     <a
-                                        href="#"
+                                        href="./Laproscopic.html"
                                         class="block py-2 px-10 text-sm"
                                     >
                                         Laproscopic Urology
                                     </a>
+                                    <div
+                                        class="absolute top-[-8px] left-[-130px] bg-white py-4 ps-5 pe-20 hidden"
+                                        id="laproscopic-submenu-content"
+                                    >
+                                        <ul class="text-sm leading-8">
+                                            <li>
+                                                <a href="">
+                                                    <span> Ureterocele </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span> Cystocele </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 <li>
                                     <a
-                                        href="#"
+                                        href="./Cystoscopy.html"
                                         class="block py-2 px-10 text-sm"
                                     >
                                         Cystoscopy & Ureteroscopy
@@ -698,9 +808,7 @@
                 },
             },
         });
-    </script>
-
-    <script>
+        // tailwind
         tailwind.config = {
             theme: {
                 extend: {
@@ -714,18 +822,83 @@
                 },
             },
         };
-    </script>
-    <script>
-        document
-            .getElementById("kidney-stone-link")
-            .addEventListener("click", function (event) {
-                event.preventDefault(); // Prevent the default link behavior
-                const submenu = document.getElementById("kidney-stone-submenu");
-                if (submenu.classList.contains("hidden")) {
-                    submenu.classList.remove("hidden"); // Show the submenu
-                } else {
-                    submenu.classList.add("hidden"); // Hide the submenu
-                }
-            });
+        // hover effect through script
+        const kidneySubmenu = document.getElementById("kidney-submenu");
+        const prostateSubmenu = document.getElementById("prostate-submenu");
+        const femaleSubmenu = document.getElementById("female-submenu");
+        const reconstructiveSubmenu = document.getElementById(
+            "reconstructive-submenu"
+        );
+        const andrologySubmenu = document.getElementById("andrology-submenu");
+        const laproscopicSubmenu = document.getElementById(
+            "laproscopic-submenu"
+        );
+
+        const kidneySubmenuContent = document.getElementById(
+            "kidney-submenu-content"
+        );
+        const prostateSubmenuContent = document.getElementById(
+            "prostate-submenu-content"
+        );
+        const femaleSubmenuContent = document.getElementById(
+            "female-submenu-content"
+        );
+        const reconstructiveSubmenuContent = document.getElementById(
+            "reconstructive-submenu-content"
+        );
+        const andrologySubmenuContent = document.getElementById(
+            "andrology-submenu-content"
+        );
+        const laproscopicSubmenuContent = document.getElementById(
+            "laproscopic-submenu-content"
+        );
+
+        kidneySubmenu.addEventListener("mouseenter", () => {
+            kidneySubmenuContent.classList.remove("hidden");
+        });
+
+        kidneySubmenu.addEventListener("mouseleave", () => {
+            kidneySubmenuContent.classList.add("hidden");
+        });
+
+        prostateSubmenu.addEventListener("mouseenter", () => {
+            prostateSubmenuContent.classList.remove("hidden");
+        });
+
+        prostateSubmenu.addEventListener("mouseleave", () => {
+            prostateSubmenuContent.classList.add("hidden");
+        });
+
+        femaleSubmenu.addEventListener("mouseenter", () => {
+            femaleSubmenuContent.classList.remove("hidden");
+        });
+
+        femaleSubmenu.addEventListener("mouseleave", () => {
+            femaleSubmenuContent.classList.add("hidden");
+        });
+
+        reconstructiveSubmenu.addEventListener("mouseenter", () => {
+            reconstructiveSubmenuContent.classList.remove("hidden");
+        });
+
+        reconstructiveSubmenu.addEventListener("mouseleave", () => {
+            reconstructiveSubmenuContent.classList.add("hidden");
+        });
+
+        andrologySubmenu.addEventListener("mouseenter", () => {
+            andrologySubmenuContent.classList.remove("hidden");
+        });
+
+        andrologySubmenu.addEventListener("mouseleave", () => {
+            andrologySubmenuContent.classList.add("hidden");
+        });
+
+        laproscopicSubmenu.addEventListener("mouseenter", () => {
+            laproscopicSubmenuContent.classList.remove("hidden");
+        });
+
+        laproscopicSubmenu.addEventListener("mouseleave", () => {
+            laproscopicSubmenuContent.classList.add("hidden");
+        });
     </script>
 </html>
