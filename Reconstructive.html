@@ -1,797 +1,1076 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <!------- link style css ------->
-        <link rel="stylesheet" href="style.css" />
-        <!-- font awesome -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        />
-        <!-- Swiper -->
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
-        />
-        <!------ script of tailwindcss ------>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!-- Google Fonts - Roboto -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
-    </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!------- link style css ------->
+		<link rel="stylesheet" href="style.css" />
+		<!-- font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+		/>
+		<!-- Swiper -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<!------ script of tailwindcss ------>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Google Fonts - Roboto -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-    <body class="font-roboto bg-[#ffffff]">
-        <!------- Header start ------->
-        <header class="bg-blue-900 text-white p-4 px-16">
-            <div class="container-fluid flex justify-between">
-                <div class="flex gap-5">
-                    <div class="items-center">
-                        <i class="fa-solid fa-phone"></i>
-                        <span class="text-sm font-bold ms-1"
-                            >Emergency Line:</span
-                        >
-                        <a href="tel:+91991225257" class="ml-2 text-sm"
-                            >+91 991225257</a
-                        >
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-square-envelope"></i>
-                        <a
-                            href="http://www.diamethylglyzhexa.in"
-                            class="text-sm ms-1"
-                            >www.diamethylglyzhexa.in</a
-                        >
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-truck-medical"></i>
-                        <span class="text-sm ms-1"> 2C7 emergency service</span>
-                    </div>
-                </div>
-                <div class="flex gap-3 justify-self-end">
-                    <div
-                        class="face text-red-500 rounded-full bg-white px-2 py-1 text-xs"
-                    >
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </div>
-                    <div
-                        class="insta text-red-500 rounded-full bg-white px-2 py-1 text-xs"
-                    >
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div
-                        class="youtube text-red-500 rounded-full bg-white px-1 py-1 text-xs"
-                    >
-                        <i class="fa-brands fa-youtube"></i>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Nav Bar start -->
-        <nav class="px-12">
-            <div class="container flex items-center gap-x-16 p-2">
-                <div>
-                    <a href="#" class="flex items-center">
-                        <img
-                            src="assets/images/logo770.png"
-                            class="h-24 w-24 object-cover"
-                        />
-                        <span class="text-2xl font-bold text-[#0e204d]"
-                            >Dhameliya Kidney Hospital</span
-                        >
-                    </a>
-                </div>
-                <ul class="flex gap-x-8">
-                    <li>
-                        <a
-                            href="#"
-                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-full"
-                        >
-                            <span class="text-[#0e204d] font-semibold text-sm"
-                                >Home</span
-                            >
-                        </a>
-                    </li>
-                    <li class="relative group">
-                        <a
-                            href="./About.html"
-                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
-                        >
-                            <span class="text-[#0e204d] font-semibold text-sm"
-                                >About</span
-                            >
-                            <i class="fa-solid fa-chevron-down text-xs"></i>
-                        </a>
-                        <div
-                            class="absolute top-full z-10 bg-white py-4 w-64 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
-                        >
-                            <ul>
-                                <li>
-                                    <a
-                                        href="./Awards.html"
-                                        class="block py-2 px-10 text-sm"
-                                    >
-                                        Awards and Achivements
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="./Cashless.html"
-                                        class="block py-2 px-10 text-sm"
-                                    >
-                                        Cashless Facility
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="./Equipment.html"
-                                        class="block py-2 px-10 text-sm"
-                                    >
-                                        Equipments
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="relative group">
-                        <a
-                            href="./Medical.html"
-                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
-                        >
-                            <span class="text-[#0e204d] font-semibold text-sm">
-                                Medical Services
-                                <i class="fa-solid fa-chevron-down"></i
-                            ></span>
-                        </a>
-                        <div
-                            class="absolute top-full z-10 bg-white py-4 w-64 shadow-xl transition-all duration-300 invisible group-hover:visible opacity-0 group-hover:opacity-100"
-                        >
-                            <!-- invisible group-hover:visible opacity-0 group-hover:opacity-100-->
-                            <ul>
-                                <li class="relative group" id="kidney-submenu">
-                                    <a
-                                        href="./Kideny.html"
-                                        class="block py-2 px-10 text-sm cursor-pointer"
-                                    >
-                                        Kidney Stone
-                                    </a>
-                                    <div
-                                        class="absolute top-0 left-[-120px] bg-white py-4 ps-5 pe-20 hidden"
-                                        id="kidney-submenu-content"
-                                    >
-                                        <ul class="text-sm leading-8">
-                                            <li>
-                                                <a href="">
-                                                    <span> PCNL </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span> URS </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span> RIRS </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span> ESWL </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li
-                                    class="relative group"
-                                    id="prostate-submenu"
-                                >
-                                    <a
-                                        href="./Prostate.html"
-                                        class="block py-2 px-10 text-sm cursor-pointer"
-                                    >
-                                        Prostate
-                                    </a>
-                                    <div
-                                        class="absolute top-0 left-[-120px] bg-white py-4 ps-5 pe-20 hidden"
-                                        id="prostate-submenu-content"
-                                    >
-                                        <ul class="text-sm leading-8">
-                                            <li>
-                                                <a href="">
-                                                    <span> TRUP </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span> HOLEP </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a
-                                        href="./Uro.html"
-                                        class="block py-2 px-10 text-sm"
-                                    >
-                                        Uro Oncology
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="./Pediatric.html"
-                                        class="block py-2 px-10 text-sm"
-                                    >
-                                        Pediatric Urology
-                                    </a>
-                                </li>
-                                <li class="relative group" id="female-submenu">
-                                    <a
-                                        href="./Female.html"
-                                        class="block py-2 px-10 text-sm"
-                                    >
-                                        Female Urology
-                                    </a>
-                                    <div
-                                        class="absolute top-0 left-[-220px] bg-white py-4 ps-5 pe-20 hidden"
-                                        id="female-submenu-content"
-                                    >
-                                        <ul class="text-sm leading-8">
-                                            <li>
-                                                <a href="">
-                                                    <span>
-                                                        Vesico Vaginal Fistula
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span>
-                                                        Cystocele & Rectocele
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span>
-                                                        Urinary Incontinence
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li
-                                    class="relative group"
-                                    id="reconstructive-submenu"
-                                >
-                                    <a
-                                        href="./Reconstructive.html"
-                                        class="block py-2 px-10 text-sm"
-                                    >
-                                        Reconstructive Urology
-                                    </a>
-                                    <div
-                                        class="absolute top-0 left-[-230px] bg-white py-4 ps-5 pe-20 hidden"
-                                        id="reconstructive-submenu-content"
-                                    >
-                                        <ul class="text-sm leading-8">
-                                            <li>
-                                                <a href="">
-                                                    <span> Urethroplasty </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span> Pyeloplasty </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span>
-                                                        Ureteric Reimplantation
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+	<body class="font-roboto bg-[#ffffff]">
+		<!------- Header start ------->
+		<header class="bg-blue-900 text-white p-4">
+			<div
+				class="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-4"
+			>
+				<!-- Left Section -->
+				<div
+					class="flex flex-wrap gap-5 items-center justify-center sm:justify-start"
+				>
+					<div class="flex items-center gap-1">
+						<i class="fa-solid fa-phone"></i>
+						<span class="text-sm font-bold">Emergency Line:</span>
+						<a href="tel:+91991225257" class="ml-2 text-sm"
+							>+91 991225257</a
+						>
+					</div>
+					<div class="flex items-center gap-1">
+						<i class="fa-solid fa-square-envelope"></i>
+						<a
+							href="http://www.diamethylglyzhexa.in"
+							class="text-sm"
+							>www.diamethylglyzhexa.in</a
+						>
+					</div>
+					<div class="flex items-center gap-1">
+						<i class="fa-solid fa-truck-medical"></i>
+						<span class="text-sm">2C7 emergency service</span>
+					</div>
+				</div>
 
-                                <!-- Andrology -->
-                                <li
-                                    class="relative group"
-                                    id="andrology-submenu"
-                                >
-                                    <a
-                                        href="./Andrology.html"
-                                        class="block py-2 px-10 text-sm"
-                                    >
-                                        Andrology
-                                    </a>
-                                    <div
-                                        class="absolute top-0 left-[-130px] bg-white py-4 ps-5 pe-20 hidden"
-                                        id="andrology-submenu-content"
-                                    >
-                                        <ul class="text-sm leading-8">
-                                            <li>
-                                                <a href="">
-                                                    <span> Infertility </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span> Impotence </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+				<!-- Right Section -->
+				<div
+					class="flex gap-3 justify-center sm:justify-end mt-4 sm:mt-0"
+				>
+					<div
+						class="face text-red-500 rounded-full bg-white px-2 py-1 text-xs"
+					>
+						<i class="fa-brands fa-facebook-f"></i>
+					</div>
+					<div
+						class="insta text-red-500 rounded-full bg-white px-2 py-1 text-xs"
+					>
+						<i class="fa-brands fa-instagram"></i>
+					</div>
+					<div
+						class="youtube text-red-500 rounded-full bg-white px-2 py-1 text-xs"
+					>
+						<i class="fa-brands fa-youtube"></i>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!------- Header end ------>
+		<!-- Nav Bar start -->
+		<nav class="px-12 sticky top-0 bg-white shadow-md z-10">
+			<div class="container flex items-center gap-x-16 p-2">
+				<div>
+					<a href="#" class="flex items-center">
+						<img
+							src="assets/images/logo770.png"
+							class="h-24 w-24 object-cover"
+						/>
+						<span class="text-2xl font-bold text-[#0e204d]"
+							>Dhameliya Kidney Hospital</span
+						>
+					</a>
+				</div>
 
-                                <!-- Laproscopic Urology -->
-                                <li
-                                    class="relative group"
-                                    id="laproscopic-submenu"
-                                >
-                                    <a
-                                        href="./Laproscopic.html"
-                                        class="block py-2 px-10 text-sm"
-                                    >
-                                        Laproscopic Urology
-                                    </a>
-                                    <div
-                                        class="absolute top-[-8px] left-[-130px] bg-white py-4 ps-5 pe-20 hidden"
-                                        id="laproscopic-submenu-content"
-                                    >
-                                        <ul class="text-sm leading-8">
-                                            <li>
-                                                <a href="">
-                                                    <span> Ureterocele </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span> Cystocele </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a
-                                        href="./Cystoscopy.html"
-                                        class="block py-2 px-10 text-sm"
-                                    >
-                                        Cystoscopy & Ureteroscopy
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="relative group">
-                        <a
-                            href="./Testimonials.html"
-                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
-                        >
-                            <span class="text-[#0e204d] font-semibold text-sm"
-                                >Testimonials</span
-                            >
-                        </a>
-                    </li>
-                    <li class="relative group">
-                        <a
-                            href="./Gallery.html"
-                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
-                        >
-                            <span class="text-[#0e204d] font-semibold text-sm"
-                                >Gallery</span
-                            >
-                        </a>
-                    </li>
-                    <li class="relative group">
-                        <a
-                            href="./Career.html"
-                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
-                        >
-                            <span class="text-[#0e204d] font-semibold text-sm"
-                                >Career</span
-                            >
-                        </a>
-                    </li>
-                    <li class="relative group">
-                        <a
-                            href="./News.html"
-                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
-                        >
-                            <span class="text-[#0e204d] font-semibold text-sm"
-                                >News</span
-                            >
-                        </a>
-                    </li>
-                    <li class="relative group">
-                        <a
-                            href="./Contact.html"
-                            class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
-                        >
-                            <span class="text-[#0e204d] font-semibold text-sm"
-                                >Contact</span
-                            >
-                        </a>
-                    </li>
-                </ul>
-                <div class="justify-self-end">
-                    <img src="assets/images/logo-corner.png" class="h-24" />
-                </div>
-            </div>
-        </nav>
+				<!-- Sidebar Toggle Button -->
+				<button
+					id="toggleSidebarBtn"
+					class="lg:hidden p-2 text-[#0e204d]"
+				>
+					<i class="fa-solid fa-bars"></i>
+					<!-- Hamburger Icon -->
+				</button>
 
-        <!-- Nav Bar end  -->
-        <!------- Header end ------>
-        <!-- breadcrumb start -->
-        <section
-            class="container-fluid px-4 mt-2 h-60 p-10"
-            style="
-                background-image: url(assets/images/6.jpg);
-                background-size: cover;
-                background-position: center;
-            "
-        >
-            <div div class="container mx-auto p-4 text-center">
-                <h1 class="text-4xl text[#0e204d] font-semibold mb-4">
-                    Career
-                </h1>
-                <p class="text-blue-900">
-                    Home &nbsp;
-                    <span class="text-xs"
-                        ><i class="fa-solid fa-chevron-right"></i></span
-                    >&nbsp; Medical Services
-                    <span class="text-xs"
-                        ><i class="fa-solid fa-chevron-right"></i></span
-                    >&nbsp;Reconstructive Urology
-                </p>
-            </div>
-        </section>
-        <!-- breadcrumb end -->
+				<!-- Sidebar -->
+				<div
+					id="sidebar"
+					class="fixed inset-0 bg-[#0e204d] bg-opacity-75 z-20 transform -translate-x-full transition-transform duration-300"
+				>
+					<div class="flex justify-end p-4">
+						<button id="closeSidebarBtn" class="text-white">
+							<i class="fa-solid fa-xmark"></i>
+							<!-- Close Icon -->
+						</button>
+					</div>
+					<ul class="flex flex-col items-center">
+						<li><a href="#" class="py-4 text-white">Home</a></li>
+						<li>
+							<a href="./About.html" class="py-4 text-white"
+								>About</a
+							>
+						</li>
+						<li>
+							<a href="./Medical.html" class="py-4 text-white"
+								>Medical Services</a
+							>
+						</li>
+						<li>
+							<a
+								href="./Testimonials.html"
+								class="py-4 text-white"
+								>Testimonials</a
+							>
+						</li>
+						<li>
+							<a href="./Gallery.html" class="py-4 text-white"
+								>Gallery</a
+							>
+						</li>
+						<li>
+							<a href="./Career.html" class="py-4 text-white"
+								>Career</a
+							>
+						</li>
+						<li>
+							<a href="./News.html" class="py-4 text-white"
+								>News</a
+							>
+						</li>
+						<li>
+							<a href="./Contact.html" class="py-4 text-white"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</div>
 
-        <!-- footer start -->
+				<ul class="hidden lg:flex gap-x-8 sm:gap-x-6 lg:gap-x-8">
+					<li>
+						<a
+							href="#"
+							class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-full"
+						>
+							<span class="text-[#0e204d] font-semibold text-sm"
+								>Home</span
+							>
+						</a>
+					</li>
+					<li class="relative group">
+						<a
+							href="./About.html"
+							class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+						>
+							<span class="text-[#0e204d] font-semibold text-sm"
+								>About</span
+							>
+							<i class="fa-solid fa-chevron-down text-xs"></i>
+						</a>
+						<div
+							class="absolute top-full z-10 bg-white py-4 w-64 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
+						>
+							<ul>
+								<li>
+									<a
+										href="./Awards.html"
+										class="block py-2 px-10 text-sm"
+									>
+										Awards and Achivements
+									</a>
+								</li>
+								<li>
+									<a
+										href="./Cashless.html"
+										class="block py-2 px-10 text-sm"
+									>
+										Cashless Facility
+									</a>
+								</li>
+								<li>
+									<a
+										href="./Equipment.html"
+										class="block py-2 px-10 text-sm"
+									>
+										Equipments
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="relative group">
+						<a
+							href="./Medical.html"
+							class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+						>
+							<span class="text-[#0e204d] font-semibold text-sm">
+								Medical Services
+								<i class="fa-solid fa-chevron-down"></i
+							></span>
+						</a>
+						<div
+							class="absolute top-full z-10 bg-white py-4 w-64 shadow-xl transition-all duration-300 invisible group-hover:visible opacity-0 group-hover:opacity-100"
+						>
+							<!-- invisible group-hover:visible opacity-0 group-hover:opacity-100-->
+							<ul>
+								<li class="relative group" id="kidney-submenu">
+									<a
+										href="./Kideny.html"
+										class="block py-2 px-10 text-sm cursor-pointer"
+									>
+										Kidney Stone
+									</a>
+									<div
+										class="absolute top-0 left-[-120px] bg-white py-4 ps-5 pe-20 hidden"
+										id="kidney-submenu-content"
+									>
+										<ul class="text-sm leading-8">
+											<li>
+												<a href="">
+													<span> PCNL </span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span> URS </span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span> RIRS </span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span> ESWL </span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li
+									class="relative group"
+									id="prostate-submenu"
+								>
+									<a
+										href="./Prostate.html"
+										class="block py-2 px-10 text-sm cursor-pointer"
+									>
+										Prostate
+									</a>
+									<div
+										class="absolute top-0 left-[-120px] bg-white py-4 ps-5 pe-20 hidden"
+										id="prostate-submenu-content"
+									>
+										<ul class="text-sm leading-8">
+											<li>
+												<a href="">
+													<span> TRUP </span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span> HOLEP </span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a
+										href="./Uro.html"
+										class="block py-2 px-10 text-sm"
+									>
+										Uro Oncology
+									</a>
+								</li>
+								<li>
+									<a
+										href="./Pediatric.html"
+										class="block py-2 px-10 text-sm"
+									>
+										Pediatric Urology
+									</a>
+								</li>
+								<li class="relative group" id="female-submenu">
+									<a
+										href="./Female.html"
+										class="block py-2 px-10 text-sm"
+									>
+										Female Urology
+									</a>
+									<div
+										class="absolute top-0 left-[-220px] bg-white py-4 ps-5 pe-20 hidden"
+										id="female-submenu-content"
+									>
+										<ul class="text-sm leading-8">
+											<li>
+												<a href="">
+													<span>
+														Vesico Vaginal Fistula
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span>
+														Cystocele & Rectocele
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span>
+														Urinary Incontinence
+													</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li
+									class="relative group"
+									id="reconstructive-submenu"
+								>
+									<a
+										href="./Reconstructive.html"
+										class="block py-2 px-10 text-sm"
+									>
+										Reconstructive Urology
+									</a>
+									<div
+										class="absolute top-0 left-[-230px] bg-white py-4 ps-5 pe-20 hidden"
+										id="reconstructive-submenu-content"
+									>
+										<ul class="text-sm leading-8">
+											<li>
+												<a href="">
+													<span> Urethroplasty </span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span> Pyeloplasty </span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span>
+														Ureteric Reimplantation
+													</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
 
-        <footer class="bg-blue-900 text-white py-10">
-            <div class="container mx-auto px-4">
-                <div
-                    class="flex flex-wrap justify-center justify-evenly items-center"
-                >
-                    <!-- Section 1-->
-                    <div class="w-full md:w-1/3 lg:w-1/4 mb-6">
-                        <h2 class="text-[32px] font-bold mb-4">
-                            Dhameliya <br />Kidney Hospital
-                        </h2>
-                        <p
-                            class="text-gray-400 text-sm leading-relaxed hover:text-white"
-                        >
-                            Dhameliya Kidney Hospital has been one of <br />
-                            the most trusted centers catering to patients with
-                            complicated kidney diseases in Brazil. It is a blend
-                            of high-risk technology and world-class experts.
-                        </p>
-                        <a href="#" class="inline-block text-white pt-6">
-                            Read More
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
+								<!-- Andrology -->
+								<li
+									class="relative group"
+									id="andrology-submenu"
+								>
+									<a
+										href="./Andrology.html"
+										class="block py-2 px-10 text-sm"
+									>
+										Andrology
+									</a>
+									<div
+										class="absolute top-0 left-[-130px] bg-white py-4 ps-5 pe-20 hidden"
+										id="andrology-submenu-content"
+									>
+										<ul class="text-sm leading-8">
+											<li>
+												<a href="">
+													<span> Infertility </span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span> Impotence </span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
 
-                    <!-- Section 2-->
-                    <div class="w-full md:w-1/3 lg:w-1/4 mb-6 flex gap-16">
-                        <div>
-                            <h3 class="text-base font-semibold mb-4">
-                                Medical Services
-                            </h3>
-                            <ul class="space-y-2 text-sm">
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-400 hover:text-white transition"
-                                        >Kidney Stone</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-400 hover:text-white transition"
-                                        >Prostate</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-400 hover:text-white transition"
-                                        >Uro Oncology</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-400 hover:text-white transition"
-                                        >Pediatric Urology</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-400 hover:text-white transition"
-                                        >Female Urology</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-base font-semibold mb-4">Links</h3>
-                            <ul class="space-y-2 text-sm">
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-400 hover:text-white transition"
-                                        >Home</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-400 hover:text-white transition"
-                                        >About Us</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-400 hover:text-white transition"
-                                        >Medical Services</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-400 hover:text-white transition"
-                                        >Testimonials</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="text-gray-400 hover:text-white transition"
-                                        >Contact Us</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Section 3-->
-                    <div
-                        class="w-full md:w-1/3 lg:w-1/4 bg-white rounded-lg shadow-lg p-10 mb-6 mt-10 relative"
-                    >
-                        <!-- Contact Information Section -->
-                        <div
-                            class="absolute left-0 h-[18 rem] w-1 bg-blue-900"
-                            style="top: 45px; bottom: 5px; left: -0px"
-                        ></div>
-                        <div class="mb-6">
-                            <h3 class="text-lg text-black font-bold mb-8">
-                                Contact Us
-                            </h3>
-                            <p class="text-gray-500 font-normal text-sm mb-2">
-                                If you have any questions or need help, feel
-                                <br />
-                                free to contact our team.
-                            </p>
-                            <p
-                                class="text-red-500 mb-4 mt-4 text-[22px] font-semibold"
-                            >
-                                <i class="fa-solid fa-phone"></i>
-                                <a
-                                    href="tel:+912612490001"
-                                    class="text-red-500 hover:underline"
-                                    >+912612490001</a
-                                >
-                            </p>
-                            <p class="text-gray-500 font-normal text-sm mb-4">
-                                402, Aayush Doctor House, Lal Darwaja,
-                                <br />Station Road, SURAT 395 002 - GUJ INDIA
-                            </p>
-                            <div class="mb-2 flex gap-10">
-                                <div class="text-[15px]">
-                                    <i
-                                        class="fa-solid fa-arrow-right text-black text-[14px]"
-                                    ></i>
-                                    <a
-                                        href="#"
-                                        class="text-black hover:underline"
-                                        >Get Directions</a
-                                    >
-                                </div>
-                                <div>
-                                    <div class="flex gap-3">
-                                        <div
-                                            class="face text-white hover:bg-[#2e3192] rounded-full bg-red-500 px-2 py-1 text-xs"
-                                        >
-                                            <i
-                                                class="fa-brands fa-facebook-f"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="insta text-white hover:bg-[#2e3192] rounded-full bg-red-500 px-2 py-1 text-xs"
-                                        >
-                                            <i
-                                                class="fa-brands fa-instagram"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="youtube text-white hover:bg-[#2e3192] rounded-full bg-red-500 px-1 py-1 text-xs"
-                                        >
-                                            <i class="fa-brands fa-youtube"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-[15px]">
-                                <i
-                                    class="fa-solid fa-arrow-right text-black text-[14px]"
-                                ></i>
-                                <a href="#" class="text-black hover:underline"
-                                    >Other Branch</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <Subfooter class="bg-gray-800 text-white py-4 mt-6">
-            <div class="container mx-auto px-4 text-center">
-                <div class="flex p-4">
-                    <p class="text-sm text-gray-700">
-                        © Copyright Dhamelha Nolney Hospital @ 2022
-                    </p>
-                    <p class="text-sm text-gray-700">
-                        Design & Development
-                        <span class="text-sm text-black">
-                            By Iked Inkotich</span
-                        >
-                    </p>
-                </div>
-            </div>
-            <div class="container-fluid mx-14 mb-8">
-                <div class="w-full border-2 border-black"></div>
-            </div>
-        </Subfooter>
+								<!-- Laproscopic Urology -->
+								<li
+									class="relative group"
+									id="laproscopic-submenu"
+								>
+									<a
+										href="./Laproscopic.html"
+										class="block py-2 px-10 text-sm"
+									>
+										Laproscopic Urology
+									</a>
+									<div
+										class="absolute top-[-8px] left-[-130px] bg-white py-4 ps-5 pe-20 hidden"
+										id="laproscopic-submenu-content"
+									>
+										<ul class="text-sm leading-8">
+											<li>
+												<a href="">
+													<span> Ureterocele </span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span> Cystocele </span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a
+										href="./Cystoscopy.html"
+										class="block py-2 px-10 text-sm"
+									>
+										Cystoscopy & Ureteroscopy
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="relative group">
+						<a
+							href="./Testimonials.html"
+							class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+						>
+							<span class="text-[#0e204d] font-semibold text-sm"
+								>Testimonials</span
+							>
+						</a>
+					</li>
+					<li class="relative group">
+						<a
+							href="./Gallery.html"
+							class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+						>
+							<span class="text-[#0e204d] font-semibold text-sm"
+								>Gallery</span
+							>
+						</a>
+					</li>
+					<li class="relative group">
+						<a
+							href="./Career.html"
+							class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+						>
+							<span class="text-[#0e204d] font-semibold text-sm"
+								>Career</span
+							>
+						</a>
+					</li>
+					<li class="relative group">
+						<a
+							href="./News.html"
+							class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+						>
+							<span class="text-[#0e204d] font-semibold text-sm"
+								>News</span
+							>
+						</a>
+					</li>
+					<li class="relative group">
+						<a
+							href="./Contact.html"
+							class="py-10 block relative before:block before:absolute before:-inset-1 before:bg-red-500 before:top-1 left-0 before:h-0.5 before:w-0 group-hover:before:w-full before:transition-all before:duration-300"
+						>
+							<span class="text-[#0e204d] font-semibold text-sm"
+								>Contact</span
+							>
+						</a>
+					</li>
+				</ul>
+				<div class="hidden lg:block ml-auto">
+					<img src="assets/images/logo-corner.png" class="h-24" />
+				</div>
+			</div>
+		</nav>
+		<!-- Nav Bar end  -->
+		<!-- breadcrumb start -->
+		<section
+			class="container-fluid px-4 mt-2 h-60 p-10"
+			style="
+				background-image: url(assets/images/6.jpg);
+				background-size: cover;
+				background-position: center;
+			"
+		>
+			<div div class="container mx-auto p-4 text-center">
+				<h1 class="text-4xl text[#0e204d] font-semibold mb-4">
+					Reconstructive
+				</h1>
+				<p class="text-blue-900">
+					Home &nbsp;
+					<span class="text-xs"
+						><i class="fa-solid fa-chevron-right"></i></span
+					>&nbsp; Medical Services
+					<span class="text-xs"
+						><i class="fa-solid fa-chevron-right"></i></span
+					>&nbsp;Reconstructive Urology
+				</p>
+			</div>
+		</section>
+		<!-- breadcrumb end -->
 
-        <!-- footer end -->
-    </body>
+		<div class="p-6 min-h-screen flex flex-col items-center">
+			<!-- Title -->
+			<h1 class="text-4xl font-bold text-blue-900 mb-8">Reconstructive Urology</h1>
+			<!-- Main Container -->
+			<div
+				class="flex flex-col md:flex-row items-center justify-center md:items-start gap-8 w-full"
+			>
+				<!-- Image Section -->
+				<div class="w-full md:w-2/4">
+					<img
+						src="./assets/images/reconstructive.jpeg"
+						alt="Medical Image"
+						class="rounded-lg shadow-lg w-full"
+					/>
+					
+				</div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        // Initialize Swiper
-        var swiper = new Swiper(".swiper-container", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return (
-                        '<span class="' + className + ' bg-blue-500"></span>'
-                    );
-                },
-            },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: true,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
-        });
-        // tailwind
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: "#da373d",
-                    },
-                    fontFamily: {
-                        roboto: ["Roboto", "sans-serif"],
-                    },
-                    primary: "#064681",
-                },
-            },
-        };
-        // hover effect through script
-        const kidneySubmenu = document.getElementById("kidney-submenu");
-        const prostateSubmenu = document.getElementById("prostate-submenu");
-        const femaleSubmenu = document.getElementById("female-submenu");
-        const reconstructiveSubmenu = document.getElementById(
-            "reconstructive-submenu"
-        );
-        const andrologySubmenu = document.getElementById("andrology-submenu");
-        const laproscopicSubmenu = document.getElementById(
-            "laproscopic-submenu"
-        );
+				<!-- Medical Services Sidebar -->
+				<div
+					class="md:w-1/2 lg:w-1/6 bg-[#afcbe2] rounded-lg shadow-lg p-6 relative sticky top-6"
+				>
+					<div
+						class="absolute left-0 top-6 bottom-6 w-1 bg-[#ff0000] rounded"
+					></div>
 
-        const kidneySubmenuContent = document.getElementById(
-            "kidney-submenu-content"
-        );
-        const prostateSubmenuContent = document.getElementById(
-            "prostate-submenu-content"
-        );
-        const femaleSubmenuContent = document.getElementById(
-            "female-submenu-content"
-        );
-        const reconstructiveSubmenuContent = document.getElementById(
-            "reconstructive-submenu-content"
-        );
-        const andrologySubmenuContent = document.getElementById(
-            "andrology-submenu-content"
-        );
-        const laproscopicSubmenuContent = document.getElementById(
-            "laproscopic-submenu-content"
-        );
+					<h2 class="text-xl font-bold text-blue-900 mb-6">
+						Medical Services
+					</h2>
 
-        kidneySubmenu.addEventListener("mouseenter", () => {
-            kidneySubmenuContent.classList.remove("hidden");
-        });
+					<ul class="space-y-4">
+						<li
+							class="flex justify-between items-center text-blue-900 font-medium bg-white hover:bg-[#ff0000] hover:text-white transition-all p-4 rounded-full"
+						>
+							Kidney Stone
+							<span class="hover:text-white">&rarr;</span>
+						</li>
+						<li
+							class="flex justify-between items-center text-blue-900 font-medium bg-white hover:bg-[#ff0000] hover:text-white transition-all p-4 rounded-full"
+						>
+							Prostate
+							<span class="hover:text-white">&rarr;</span>
+						</li>
+						<li
+							class="flex justify-between items-center text-blue-900 font-medium bg-white hover:bg-[#ff0000] hover:text-white transition-all p-4 rounded-full"
+						>
+							Uro Oncology
+							<span class="hover:text-white">&rarr;</span>
+						</li>
+						<li
+							class="flex justify-between items-center text-blue-900 font-medium bg-white hover:bg-[#ff0000] hover:text-white transition-all p-4 rounded-full"
+						>
+							Pediatric Urology
+							<span class="hover:text-white">&rarr;</span>
+						</li>
+						<li
+							class="flex justify-between items-center text-blue-900 font-medium bg-white hover:bg-[#ff0000] hover:text-white transition-all p-4 rounded-full"
+						>
+							Female Urology
+							<span class="hover:text-white">&rarr;</span>
+						</li>
+						<li
+							class="flex justify-between items-center text-blue-900 font-medium bg-white hover:bg-[#ff0000] hover:text-white transition-all p-4 rounded-full"
+						>
+							Reconstructive Urology
+							<span class="hover:text-white">&rarr;</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section>
+			<div
+				class="container mx-auto justify-center mt-12 px-4 md:px-8"
+			>
+				<h1 class="text-4xl ms-24 text-blue-900 mb-16 font-bold">
+					Treatments
+				</h1>
+				<div
+					class="swiper-container mx-auto w-full mb-24 max-w-screen-xl overflow-hidden"
+				>
+					<div class="swiper-wrapper pb-6">
+						<!-- Slide 1 -->
+						<div
+							class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300 relative group"
+						>
+							<div class="rounded-lg overflow-hidden">
+								<img
+									src="./assets/images/prod7186.jpeg"
+									alt="Kidney Stone"
+									class="rounded-lg group-hover:scale-105 transition-all"
+								/>
+							</div>
+							<div class="px-6 pt-10 pb-14">
+								<h3
+									class="text-xl font-bold text-blue-900 mb-4"
+								>
+									Vesico Vaginal Fistula
+								</h3>
+								<a
+									href="#"
+									class="text-blue-900 group-hover:px-4 group-hover:py-2 group-hover:rounded-full text-black-500 font-semibold group-hover:bg-blue-900 group-hover:text-white transition-all duration-300"
+								>
+									Read More
+									<i class="fa-solid fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
 
-        kidneySubmenu.addEventListener("mouseleave", () => {
-            kidneySubmenuContent.classList.add("hidden");
-        });
+						<!-- Slide 2 -->
+						<div
+							class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300 group"
+						>
+							<div class="rounded-lg overflow-hidden">
+								<img
+									src="./assets/images/prod8759.jpeg"
+									alt="Prostate"
+									class="rounded-lg group-hover:scale-105 transition-all"
+								/>
+							</div>
+							<div class="px-6 pt-10 pb-14">
+								<h3
+									class="text-xl font-bold text-blue-900 mb-4"
+								>
+									Cystocele & Rectocele
+								</h3>
+								<a
+									href="#"
+									class="text-blue-900 group-hover:px-4 group-hover:py-2 group-hover:rounded-full text-black-500 font-semibold group-hover:bg-blue-900 group-hover:text-white transition-all duration-300"
+								>
+									Read More
+									<i class="fa-solid fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
 
-        prostateSubmenu.addEventListener("mouseenter", () => {
-            prostateSubmenuContent.classList.remove("hidden");
-        });
+						<!-- Slide 3 -->
+						<div
+							class="swiper-slide hover:bg-white hover:shadow-lg rounded-lg transition-all duration-300 relative group"
+						>
+							<div class="rounded-lg overflow-hidden">
+								<img
+									src="./assets/images/prod9126.jpeg"
+									alt="Kidney Stone"
+									class="group-hover:scale-105 transition-all"
+								/>
+							</div>
+							<div class="px-6 pt-10 pb-14">
+								<h3
+									class="text-xl font-bold text-blue-900 mb-4"
+								>
+									Urinary Incontinence
+								</h3>
+								<a
+									href="#"
+									class="text-blue-900 group-hover:px-4 group-hover:py-2 group-hover:rounded-full text-black-500 font-semibold group-hover:bg-blue-900 group-hover:text-white transition-all duration-300"
+								>
+									Read More
+									<i class="fa-solid fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        prostateSubmenu.addEventListener("mouseleave", () => {
-            prostateSubmenuContent.classList.add("hidden");
-        });
+		<!-- footer start -->
 
-        femaleSubmenu.addEventListener("mouseenter", () => {
-            femaleSubmenuContent.classList.remove("hidden");
-        });
+		<footer class="bg-blue-900 text-white py-10">
+			<div class="container mx-auto px-4">
+				<div
+					class="flex flex-wrap justify-center justify-evenly items-center"
+				>
+					<!-- Section 1-->
+					<div class="w-full md:w-1/3 lg:w-1/4 mb-6">
+						<h2 class="text-[32px] font-bold mb-4">
+							Dhameliya <br />Kidney Hospital
+						</h2>
+						<p
+							class="text-gray-400 text-sm leading-relaxed hover:text-white"
+						>
+							Dhameliya Kidney Hospital has been one of <br />
+							the most trusted centers catering to patients with
+							complicated kidney diseases in Brazil. It is a blend
+							of high-risk technology and world-class experts.
+						</p>
+						<a href="#" class="inline-block text-white pt-6">
+							Read More
+							<i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
 
-        femaleSubmenu.addEventListener("mouseleave", () => {
-            femaleSubmenuContent.classList.add("hidden");
-        });
+					<!-- Section 2-->
+					<div class="w-full md:w-1/3 lg:w-1/4 mb-6 flex gap-16">
+						<div>
+							<h3 class="text-base font-semibold mb-4">
+								Medical Services
+							</h3>
+							<ul class="space-y-2 text-sm">
+								<li>
+									<a
+										href="#"
+										class="text-gray-400 hover:text-white transition"
+										>Kidney Stone</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-gray-400 hover:text-white transition"
+										>Prostate</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-gray-400 hover:text-white transition"
+										>Uro Oncology</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-gray-400 hover:text-white transition"
+										>Pediatric Urology</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-gray-400 hover:text-white transition"
+										>Female Urology</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h3 class="text-base font-semibold mb-4">Links</h3>
+							<ul class="space-y-2 text-sm">
+								<li>
+									<a
+										href="#"
+										class="text-gray-400 hover:text-white transition"
+										>Home</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-gray-400 hover:text-white transition"
+										>About Us</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-gray-400 hover:text-white transition"
+										>Medical Services</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-gray-400 hover:text-white transition"
+										>Testimonials</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-gray-400 hover:text-white transition"
+										>Contact Us</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Section 3-->
+					<div
+						class="w-full md:w-1/3 lg:w-1/4 bg-white rounded-lg shadow-lg p-10 mb-6 mt-10 relative"
+					>
+						<!-- Contact Information Section -->
+						<div
+							class="absolute left-0 h-[18 rem] w-1 bg-blue-900"
+							style="top: 45px; bottom: 5px; left: -0px"
+						></div>
+						<div class="mb-6">
+							<h3 class="text-lg text-black font-bold mb-8">
+								Contact Us
+							</h3>
+							<p class="text-gray-500 font-normal text-sm mb-2">
+								If you have any questions or need help, feel
+								<br />
+								free to contact our team.
+							</p>
+							<p
+								class="text-red-500 mb-4 mt-4 text-[22px] font-semibold"
+							>
+								<i class="fa-solid fa-phone"></i>
+								<a
+									href="tel:+912612490001"
+									class="text-red-500 hover:underline"
+									>+912612490001</a
+								>
+							</p>
+							<p class="text-gray-500 font-normal text-sm mb-4">
+								402, Aayush Doctor House, Lal Darwaja,
+								<br />Station Road, SURAT 395 002 - GUJ INDIA
+							</p>
+							<div class="mb-2 flex gap-10">
+								<div class="text-[15px]">
+									<i
+										class="fa-solid fa-arrow-right text-black text-[14px]"
+									></i>
+									<a
+										href="#"
+										class="text-black hover:underline"
+										>Get Directions</a
+									>
+								</div>
+								<div>
+									<div class="flex gap-3">
+										<div
+											class="face text-white hover:bg-[#2e3192] rounded-full bg-red-500 px-2 py-1 text-xs"
+										>
+											<i
+												class="fa-brands fa-facebook-f"
+											></i>
+										</div>
+										<div
+											class="insta text-white hover:bg-[#2e3192] rounded-full bg-red-500 px-2 py-1 text-xs"
+										>
+											<i
+												class="fa-brands fa-instagram"
+											></i>
+										</div>
+										<div
+											class="youtube text-white hover:bg-[#2e3192] rounded-full bg-red-500 px-1 py-1 text-xs"
+										>
+											<i class="fa-brands fa-youtube"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-[15px]">
+								<i
+									class="fa-solid fa-arrow-right text-black text-[14px]"
+								></i>
+								<a href="#" class="text-black hover:underline"
+									>Other Branch</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<Subfooter class="bg-gray-800 text-white py-4 mt-6">
+			<div class="container mx-auto px-4 text-center">
+				<div class="flex p-4">
+					<p class="text-sm text-gray-700">
+						© Copyright Dhamelha Nolney Hospital @ 2022
+					</p>
+					<p class="text-sm text-gray-700">
+						Design & Development
+						<span class="text-sm text-black">
+							By Iked Inkotich</span
+						>
+					</p>
+				</div>
+			</div>
+			<div class="container-fluid mx-14 mb-8">
+				<div class="w-full border-2 border-black"></div>
+			</div>
+		</Subfooter>
+		<a
+			href="https://wa.me/+919913225927"
+			target="_blank"
+			class="fixed bottom-10 left-10 bg-green-500 text-white h-12 w-12 rounded-full shadow-lg hover:bg-green-600 focus:outline-none transition-all duration-300 transform hover:scale-110"
+		>
+			<img src="/assets/images/whatsapp.png" alt="" class="h-full w-full">
+		</a>
 
-        reconstructiveSubmenu.addEventListener("mouseenter", () => {
-            reconstructiveSubmenuContent.classList.remove("hidden");
-        });
+		<button
+			id="backToTop"
+			class="fixed bottom-10 w-12 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none transition-all duration-300 transform hover:scale-110"
+		>
+			↑
+		</button>
+		<!-- footer end -->
+	</body>
 
-        reconstructiveSubmenu.addEventListener("mouseleave", () => {
-            reconstructiveSubmenuContent.classList.add("hidden");
-        });
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		// Initialize Swiper
+		var swiper = new Swiper(".swiper-container", {
+			slidesPerView: 1,
+			spaceBetween: 20,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+				renderBullet: function (index, className) {
+					return (
+						'<span class="' + className + ' bg-blue-500"></span>'
+					);
+				},
+			},
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: true,
+			},
+			breakpoints: {
+				640: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				1024: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+			},
+		});
+		// tailwind
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						clifford: "#da373d",
+					},
+					fontFamily: {
+						roboto: ["Roboto", "sans-serif"],
+					},
+					primary: "#064681",
+				},
+			},
+		};
+		// hover effect through script
+		const kidneySubmenu = document.getElementById("kidney-submenu");
+		const prostateSubmenu = document.getElementById("prostate-submenu");
+		const femaleSubmenu = document.getElementById("female-submenu");
+		const reconstructiveSubmenu = document.getElementById(
+			"reconstructive-submenu"
+		);
+		const andrologySubmenu = document.getElementById("andrology-submenu");
+		const laproscopicSubmenu = document.getElementById(
+			"laproscopic-submenu"
+		);
 
-        andrologySubmenu.addEventListener("mouseenter", () => {
-            andrologySubmenuContent.classList.remove("hidden");
-        });
+		const kidneySubmenuContent = document.getElementById(
+			"kidney-submenu-content"
+		);
+		const prostateSubmenuContent = document.getElementById(
+			"prostate-submenu-content"
+		);
+		const femaleSubmenuContent = document.getElementById(
+			"female-submenu-content"
+		);
+		const reconstructiveSubmenuContent = document.getElementById(
+			"reconstructive-submenu-content"
+		);
+		const andrologySubmenuContent = document.getElementById(
+			"andrology-submenu-content"
+		);
+		const laproscopicSubmenuContent = document.getElementById(
+			"laproscopic-submenu-content"
+		);
 
-        andrologySubmenu.addEventListener("mouseleave", () => {
-            andrologySubmenuContent.classList.add("hidden");
-        });
+		kidneySubmenu.addEventListener("mouseenter", () => {
+			kidneySubmenuContent.classList.remove("hidden");
+		});
 
-        laproscopicSubmenu.addEventListener("mouseenter", () => {
-            laproscopicSubmenuContent.classList.remove("hidden");
-        });
+		kidneySubmenu.addEventListener("mouseleave", () => {
+			kidneySubmenuContent.classList.add("hidden");
+		});
 
-        laproscopicSubmenu.addEventListener("mouseleave", () => {
-            laproscopicSubmenuContent.classList.add("hidden");
-        });
-    </script>
+		prostateSubmenu.addEventListener("mouseenter", () => {
+			prostateSubmenuContent.classList.remove("hidden");
+		});
+
+		prostateSubmenu.addEventListener("mouseleave", () => {
+			prostateSubmenuContent.classList.add("hidden");
+		});
+
+		femaleSubmenu.addEventListener("mouseenter", () => {
+			femaleSubmenuContent.classList.remove("hidden");
+		});
+
+		femaleSubmenu.addEventListener("mouseleave", () => {
+			femaleSubmenuContent.classList.add("hidden");
+		});
+
+		reconstructiveSubmenu.addEventListener("mouseenter", () => {
+			reconstructiveSubmenuContent.classList.remove("hidden");
+		});
+
+		reconstructiveSubmenu.addEventListener("mouseleave", () => {
+			reconstructiveSubmenuContent.classList.add("hidden");
+		});
+
+		andrologySubmenu.addEventListener("mouseenter", () => {
+			andrologySubmenuContent.classList.remove("hidden");
+		});
+
+		andrologySubmenu.addEventListener("mouseleave", () => {
+			andrologySubmenuContent.classList.add("hidden");
+		});
+
+		laproscopicSubmenu.addEventListener("mouseenter", () => {
+			laproscopicSubmenuContent.classList.remove("hidden");
+		});
+
+		laproscopicSubmenu.addEventListener("mouseleave", () => {
+			laproscopicSubmenuContent.classList.add("hidden");
+		});
+
+		const toggleButton = document.getElementById("toggleSidebarBtn");
+		const sidebar = document.getElementById("sidebar");
+		const closeSidebarButton = document.getElementById("closeSidebarBtn");
+
+		toggleButton.addEventListener("click", () => {
+			sidebar.classList.toggle("-translate-x-full");
+		});
+
+		closeSidebarButton.addEventListener("click", () => {
+			sidebar.classList.add("-translate-x-full");
+		});
+
+		// bottom to top button
+		const backToTopButton = document.getElementById("backToTop");
+		window.onscroll = function () {
+			if (
+				document.body.scrollTop > 100 ||
+				document.documentElement.scrollTop > 100
+			) {
+				backToTopButton.style.display = "block";
+			} else {
+				backToTopButton.style.display = "none";
+			}
+		};
+		backToTopButton.onclick = function () {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
+		};
+	</script>
 </html>
